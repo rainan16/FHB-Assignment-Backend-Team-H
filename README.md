@@ -1,3 +1,5 @@
+[![Node.js CI](https://github.com/rainan16/FHB-Assignment-Backend-Team-H/actions/workflows/node.js.yml/badge.svg)](https://github.com/rainan16/FHB-Assignment-Backend-Team-H/actions/workflows/node.js.yml)
+[![Lint](https://github.com/rainan16/FHB-Assignment-Backend-Team-H/actions/workflows/eslint.yml/badge.svg)](https://github.com/rainan16/FHB-Assignment-Backend-Team-H/actions/workflows/eslint.yml)
 [![CodeQL](https://github.com/rainan16/FHB-Assignment-Backend-Team-H/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/rainan16/FHB-Assignment-Backend-Team-H/actions/workflows/codeql-analysis.yml)
 
 # Notes Backend
