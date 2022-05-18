@@ -16,4 +16,4 @@ jobs:
           node-version: 16
       - run: npm ci # or yarn install
       - name: Run ESLint
-        run: eslint . --ext .js,.jsx,.ts,.tsx
+        run: ./node_modules/.bin/eslint . --ext .js,.jsx,.ts,.tsx
