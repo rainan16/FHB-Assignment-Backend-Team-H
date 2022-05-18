@@ -1,9 +1,8 @@
-const express = require('express');
-const generator = require("./generator.js");
-const notesData = require("./notesData.js");
+/* eslint-disable no-const-assign */
+const express = require('express')
+const generator = require('./generator.js')
+const notesData = require('./notesData.js')
 const app = express()
-
-
 
 app.use(express.json())
 
@@ -15,8 +14,8 @@ app.post('/api/notes', (request, response) => {
   const body = request.body
 
   if (!body.content) {
-    return response.status(400).json({ 
-      error: 'content missing' 
+    return response.status(400).json({
+      error: 'content missing'
     })
   }
 
@@ -24,7 +23,7 @@ app.post('/api/notes', (request, response) => {
     content: body.content,
     important: body.important || false,
     date: new Date(),
-    id: generator.generateId(notesData),
+    id: generator.generateId(notesData)
   }
 
   notesData = notesData.concat(note)
@@ -55,8 +54,8 @@ app.get('/api/notes/:id', (request, response) => {
 })
 
 const PORT = 3001
-var server = app.listen(PORT, () => {
+const server = app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`)
 })
 
-module.exports = {app, server};
+module.exports = { app, server }
