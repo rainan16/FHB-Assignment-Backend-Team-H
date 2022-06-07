@@ -31,4 +31,4 @@ jobs:
           method: 'POST'          
           customHeaders: '{"Content-Type": "application/json"}'
           bearerToken: ${{ secrets.E2G_BEARER }}
-          data: '{\"flowId\":\"00b7fbd9-880c-4c05-bd66-b511dbbd90ff\",\"timeoutInMinutes\":5,\"priority\":0}'
+          data: '{"flowId": "00b7fbd9-880c-4c05-bd66-b511dbbd90ff", "timeoutInMinutes": 5, "priority": 0}'
